@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reporthem!</title>
+	<meta charset="utf-8" />
+    <!--To be in .css file-->
+    <style>
+        #reportBar .header_row
+        {
+            padding: 0 15px 0 70px;
+        }
+
+        #reportBar .header_row2
+        {
+            padding: 0 15px 0 0;
+        }
+        #reports .report_data
+        {
+            padding: 0 0 15px 70px;
+        }
+    </style>
+    
+</head>
+<body>
+<header>
+	<h1 align="center">Witness something bad? You have came to the right place! Report them!</h1>
+</header>
+
+<div aria-label="Navigation Menu" align="right">
+    <button type="button" class="btn btn-default">My Reports</button>
+    <button type="button" class="btn btn-default">Forums</button>
+	<button type="button" class="btn btn-default">Messages</button>
+	<button type="button" class="btn btn-default">Settings</button>
+</div>
+	<h2>Welcome User!</h2>
+<table>
+    <tr id="reportBar">
+        <td class="header_row"><h3>My Reports</h3></td>
+        <td class="header_row2">
+        <button type="button" id="createReport" data-loading-text="Loading..." 
+                class="btn btn-primary" autocomplete="off">Create New Report!</button>
+            
+        </td>
+    </tr>
+</table>
+    <!--button id="createReport" type="button" class="btn btn-primary" data-loading-text="Loading..."-->
+<!--Need JavaScript-->
+<table id="reports">
+    <tr>
+        <td class="report_data">Just own reports... Click to view!</td>
+    </tr>
+    <tr>
+        <td class="report_data">Own Reports...</td>
+    </tr>
+</table>
+
+<!--To be in Javascript file-->
+    <script>
+        $('#createReport').on('click', function () {
+            var $btn = $(this).button('loading')
+            // business logic...
+            $btn.button('reset')
+        })
+    </script>
+</body>
+</html>

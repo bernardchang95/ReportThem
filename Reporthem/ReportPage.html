@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Lodge a Report!</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <h1>Lodge a Report</h1>
+    </header>
+
+    <form action="index.html" method="post" autocomplete="off">
+        <div>
+            
+            <label for="datetime">Date and time of incident: </label>
+            <input type="datetime" name="DateandTime" required/>
+            
+        </div>
+
+        <div>
+            
+            <label for="typeofIncident">Type of Incident:</label>
+            <select class="form-control">
+                <option>Drug Abuse</option>
+                <option>Theft/Robbery</option>
+                <option>Murder/Attempted Murder</option>
+                <option>Bullying</option>
+                <option>Sexual harrassment</option>
+                <option>Smuggling</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="people">Number of people involved: </label>
+            <input type="number" name="people"/>
+        </div>
+
+        <div>
+            <label for="details">Details: </label>
+            <input type="text" name="details"/>
+
+        </div>
+        <input type="submit" value="Submit"/>
+    </form>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
