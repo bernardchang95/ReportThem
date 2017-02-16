@@ -1,10 +1,42 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>My Messages - Reporthem!</title>
 	<meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/Message.css" />
 </head>
 <body>
+    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td width="80%">
+                    <!--Welcome user!-->
+                    <h1>My Messages</h1>
+                </td>
+                <td width="20%">
+                    <!--For navbar-->
+                    <button type="button" class="btn btn-info">Home</button>
+                    <button type="button" class="btn btn-info">Forums</button>
+                    <button type="button" class="btn btn-info">Messages</button>
+                    <button type="button" class="btn btn-info">Settings</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
+    <table>
+    <div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome, <b></b></p>        
+        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>       
+        <div style="clear:both"></div>       
+    </div>    
+        <div id="chatbox"></div>
+        <form name="message" action="">    
+            <input name="usermsg" type="text" id="usermsg" size="63" />  
+            <input name="submitmsg" type="submit" id="submitmsg" value="Send" />   
+        </form>
+    </div>
+    </table>
 </body>
 </html>
