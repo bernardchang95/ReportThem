@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Reporthem!</title>
     <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
     <script src="js/index.js"></script>
 </head>
 
@@ -20,10 +21,10 @@
                     <h1>Welcome!</h1>
                 </td> 
                 <td width="20%"> <!--For navbar-->
-                    <button type="button" class="btn btn-info">Home</button>
-                    <button type="button" class="btn btn-info">Forums</button>
-                    <button type="button" class="btn btn-info">Messages</button>
-                    <button type="button" class="btn btn-info">Settings</button>
+                    <input type="button" onclick="location.href='index.html'" value="Home" />
+                    <input type="button" onclick="location.href='Forums.html'" value="Forums"/>
+                    <input type="button" onclick="location.href='Message.html'" value="Messages" />
+                    <input type="button" onclick="location.href='Settings.html'" value="Settings" />
                 </td> 
             </tr>
         </tbody>
@@ -37,7 +38,7 @@
             </td>
             <td width="80%">
                 <!--Create button-->
-                <button type="button" class="btn btn-info">Create New Report</button>
+                <input type="button" onclick="location.href='ReportPage.html'" value="Create New Report"/>
                 <button type="button" class="btn btn-info">Delete Report</button>
             </td>
         </tr>

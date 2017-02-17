@@ -3,6 +3,8 @@
 <head>
     <title>Lodge a Report!</title>
 	<meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/ReportPage.css"/>
+    <script src="js/ReportPage.js"></script>
 </head>
 <body>
     
@@ -15,10 +17,10 @@
                 </td>
                 <td width="20%">
                     <!--For navbar-->
-                    <button type="button" class="btn btn-info">Home</button>
-                    <button type="button" class="btn btn-info">Forums</button>
-                    <button type="button" class="btn btn-info">Messages</button>
-                    <button type="button" class="btn btn-info">Settings</button>
+                    <input type="button" onclick="location.href='index.html'" value="Home" />
+                    <input type="button" onclick="location.href='Forums.html'" value="Forums" />
+                    <input type="button" onclick="location.href='Message.html'" value="Messages" />
+                    <input type="button" onclick="location.href='Settings.html'" value="Settings" />
                 </td>
             </tr>
         </tbody>
@@ -56,6 +58,7 @@
             <textarea id="detailsTB" rows="10" cols="100" required></textarea>
         </div>
         <input type="submit" value="Submit"/>
+        <input type="button" onclick="location.href='index.html'" value="Cancel"/>
     </form>
     
     <footer>
